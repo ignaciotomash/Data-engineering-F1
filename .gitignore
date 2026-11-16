@@ -1,0 +1,16 @@
+# --- Python ---
+# Virtual environment: rebuilt from requirements.txt, never committed
+.venv/
+# Bytecode caches Python creates automatically
+__pycache__/
+
+# --- Data ---
+# Raw Parquet files, the DuckDB database and the FastF1 cache.
+# All of it can be rebuilt by running the pipeline, so it stays out of Git.
+data/
+
+# --- dbt ---
+# Compiled SQL, run logs and installed packages, regenerated on every dbt run
+target/
+logs/
+dbt_packages/

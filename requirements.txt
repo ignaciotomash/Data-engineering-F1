@@ -1,0 +1,18 @@
+# Direct dependencies of the project, pinned to exact versions.
+# Install with: pip install -r requirements.txt
+# shortcut: only direct dependencies are pinned, so their sub-dependencies can drift;
+# move to a lock file (uv or pip-tools) if a fresh install ever breaks.
+
+# Stage 1 - Ingestion
+fastf1==3.9.2
+pandas==2.3.3
+pyarrow==26.0.1
+duckdb==2.0.0
+
+# Stage 2 - Modeling (dbt Core v1 + DuckDB adapter)
+dbt-core==1.12.7
+dbt-duckdb==1.11.1
+
+# Stage 3 - Machine Learning
+scikit-learn==1.9.1
+lightgbm==4.7.0
