@@ -3,8 +3,8 @@
 # shortcut: only direct dependencies are pinned, so their sub-dependencies can drift;
 # move to a lock file (uv or pip-tools) if a fresh install ever breaks.
 
-# Stage 1 - Ingestion
-fastf1==3.9.2
+# Stage 1 - Ingestion (HTTP calls to the OpenF1 API)
+requests==2.34.2
 pandas==2.3.3
 pyarrow==26.0.1
 duckdb==2.0.0
